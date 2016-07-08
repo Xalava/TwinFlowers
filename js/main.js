@@ -72,16 +72,26 @@ function vibration(){
 
 	$.post("https://iot.seeed.cc/v1/node/GenericDOutD2/onoff/1?access_token=1218704a2dba32119cc9dc463462410c");
 	//strombo
-	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/250/0/0?access_token=1218704a2dba32119cc9dc463462410c");
-	}, 800);
-	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/0/250/0?access_token=1218704a2dba32119cc9dc463462410c");
+	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/250/10/10?access_token=1218704a2dba32119cc9dc463462410c");
+	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/10/250/10?access_token=1218704a2dba32119cc9dc463462410c");
+	}, 600);
+	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/10/10/250?access_token=1218704a2dba32119cc9dc463462410c");
 	}, 1200);
-	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/0/0/250?access_token=1218704a2dba32119cc9dc463462410c");
-	}, 1600);
-	setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/0/0/0?access_token=1218704a2dba32119cc9dc463462410c");
-	}, 2000);
+
+
+	setTimeout(function(){
+		$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/250/10/10?access_token=1218704a2dba32119cc9dc463462410c");
+		setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/10/250/10?access_token=1218704a2dba32119cc9dc463462410c");
+		}, 400);
+		setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/10/10/250?access_token=1218704a2dba32119cc9dc463462410c");
+		}, 800);
+		setTimeout(function(){	$.post("https://iot.seeed.cc/v1/node/GroveLCDRGBI2C0/backlight_color_rgb/0/0/0?access_token=1218704a2dba32119cc9dc463462410c");
+		}, 1200);
+
+	},1800);
+
 	//end vibration
  	setTimeout(function(){$.post("https://iot.seeed.cc/v1/node/GenericDOutD2/onoff/0?access_token=1218704a2dba32119cc9dc463462410c");
-	}, 2000);
+	}, 2400);
 
 }
