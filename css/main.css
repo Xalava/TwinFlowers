@@ -1,0 +1,21 @@
+body {
+    background-color: #9957FF;
+    background-image: url("../img/cote.jpg");
+      background-size: cover;
+
+}
+
+.applaudim {
+	background-color:  rgba(200,50,250,0.5);
+	color:white;
+}
+
+section {
+	padding-bottom: 20px;
+}
+
+.jumbotron{
+	background-color:  rgba(250,250,250,0.8);
+
+
+}
