@@ -1,3 +1,21 @@
+// Web3js
+var Web3 = require('web3');
+var web3 = new Web3();
+web3.setProvider(new web3.providers.HttpProvider());
+var twinSpirit = web3.eth.contract(
+	[{
+	    constant: true,
+	    inputs: [],
+	    name: "title",
+	    outputs: [{
+	        name: "",
+	        type: "string"
+	    }],
+	    type: "function"
+	}]).at("0x0fbd11b5cb42b7351e677d88783eb941f0e5fc5f");
+
+
+// IOT interaction
 var humidityPrec = 30;
 var temperaturePrec = 30;
 
