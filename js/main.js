@@ -95,3 +95,7 @@ function vibration(){
 	}, 2400);
 
 }
+
+
+
+
