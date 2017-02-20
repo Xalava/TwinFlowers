@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Fleurs Jumelles</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="css/bootstrap.css">
 
-        <script type="text/javascript" src="js/bignumber.min.js"></script>
-        <script type="text/javascript" src="js/web3.min.js"></script>
+        <link rel="icon" href="icon.png">
+
+        <script type="text/javascript" src="js/vendor/bignumber.min.js"></script>
+        <script type="text/javascript" src="js/vendor/web3.min.js"></script>
 
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,7 +21,10 @@
         <div class="container">
             <section class="jumbotron">
                 <div class="row">
-                    <div class="col-xs-8"><h1>Fleur Jumelles</h1></div>
+                    <div class="col-xs-8">
+                        <h1>Fleurs Jumelles</h1>
+                        <h5><i><span id="sculptureName"></span></i></h5>
+                    </div>
                     <div class="col-xs-2"></div>
                     <div class="col-xs-2">
                         <!-- <img class="img-circle img-responsive" src="http://lesbricodeurs.fr/images/lesbricodeurs.png"> -->
@@ -46,8 +51,6 @@
                         <div class="progress">
                           <div class="progress-bar progress-striped progress-warning humidity-bar" role="progressbar" style="width: 90%;">
                             <span class="hum"></span>
-
-                            
                           </div>
                         </div>
 
@@ -81,14 +84,10 @@
                 <div class="row">
                     <div class="col-xs-8 col-xs-offset-2 applaudim">
                         <br/>
-<!--                         <p>Donation</p>
- -->                        <button class="btn-default btn-lg btn-warning" onclick="vibration()">Donation</button>
+                         <button class="btn-default btn-lg btn-warning" onclick="vibration()">Donation</button>
                         <br/><br/>
                     </div>
-
-
-                    
-                </div> <!--row-->
+                </div> 
             </section>
 
 
@@ -98,15 +97,10 @@
                         <br/>
                         <p>Contributors</p>
                         <br/>
-
-
-                    </div>
-
-
-                    
+                        <ul id="donatorsList"></ul>
+                    </div>     
                 </div> <!--row-->
             </section>
-<!-- 
 <!-- 
             <section>
                 <div class="row">
